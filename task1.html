@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Through Cultures</title>
+    <link rel="stylesheet" href="task1.css">
+    <link rel="icon" type="image/png" href="icon-removebg-preview.png">
+</head>
+<body>
+    <nav class="navbar">Journey Through Cultures</nav>
+    
+    <div class="container">
+        <div class="card">
+            <div class="card-image one"></div>
+            <div class="card-content">
+                <h3>Alappuzha</h3>
+                <p>A beautiful backwater destination in Kerala.</p>
+                <div class="hidden-content" style="display:none;">
+                    <p>Alappuzha, also known as Alleppey, is famous for its scenic backwaters, houseboat cruises, and serene natural beauty. It is a major tourist destination in Kerala with lush coconut palms and waterways.</p>
+                </div>
+                <button class="read-btn" onclick="toggleContent(this)">Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image two"></div>
+            <div class="card-content">
+                <h3>Tyndis</h3>
+                <p>Scenic beach location with pristine views.</p>
+                <div class="hidden-content" style="display:none;">
+                    <p>Tyndis is a beautiful coastal area known for its pristine beaches and scenic ocean views. It offers a perfect getaway for beach lovers and provides excellent opportunities for water sports and relaxation.</p>
+                </div>
+                <button class="read-btn" onclick="toggleContent(this)">Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image three"></div>
+            <div class="card-content">
+                <h3>Palakadu</h3>
+                <p>Historic mountain pass with cultural heritage.</p>
+                <div class="hidden-content" style="display:none;">
+                    <p>Palakadu is a historic mountain pass known for its cultural significance and breathtaking landscape. It is an important trade route with rich historical heritage and stunning natural scenery that attracts history enthusiasts and nature lovers.</p>
+                </div>
+                <button class="read-btn" onclick="toggleContent(this)">Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image four"></div>
+            <div class="card-content">
+                <h3>Jatayu Earth Center</h3>
+                <p>Iconic landmark with panoramic views.</p>
+                <div class="hidden-content" style="display:none;">
+                    <p>Jatayu Earth Center is an iconic Indian cultural landmark featuring the world's largest bird sculpture. It offers panoramic views of the surrounding landscape and is based on the legendary figure from Hindu mythology.</p>
+                </div>
+                <button class="read-btn" onclick="toggleContent(this)">Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image five"></div>
+            <div class="card-content">
+                <h3>Varkala</h3>
+                <p>Cliff-side beach with spiritual importance.</p>
+                <div class="hidden-content" style="display:none;">
+                    <p>Varkala is a unique cliff-side beach known for its spiritual significance and Ayurvedic treatments. It is one of the few places in India where cliffs and sea meet, offering stunning views and a serene atmosphere for pilgrims and tourists.</p>
+                </div>
+                <button class="read-btn" onclick="toggleContent(this)">Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image six"></div>
+            <div class="card-content">
+                <h3>Munnar</h3>
+                <p>Hill station famous for tea plantations.</p>
+                <div class="hidden-content" style="display:none;">
+                    <p>Munnar is a picturesque hill station famous for its vast tea plantations and misty mountains. At an altitude of 1,600 meters, it offers a cool climate, lush green scenery, and is ideal for trekking and relaxation.</p>
+                </div>
+                <button class="read-btn" onclick="toggleContent(this)">Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image seven"></div>
+            <div class="card-content">
+                <h3>Wayanad</h3>
+                <p>Lush green hill station with scenic beauty.</p>
+                <div class="hidden-content" style="display:none;">
+                    <p>Wayanad is a lush green hill station in the Western Ghats known for its scenic beauty and adventure activities. It features coffee plantations, wildlife sanctuaries, ancient caves, and is perfect for trekking and nature exploration.</p>
+                </div>
+                <button class="read-btn" onclick="toggleContent(this)">Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image eight"></div>
+            <div class="card-content">
+                <h3>Kumarakom</h3>
+                <p>Serene backwater village with bird sanctuary.</p>
+                <div class="hidden-content" style="display:none;">
+                    <p>Kumarakom is a serene backwater village famous for its bird sanctuary and tranquil backwaters. It is home to migratory birds and offers traditional houseboat stays, providing a perfect blend of nature, culture, and adventure.</p>
+                </div>
+                <button class="read-btn" onclick="toggleContent(this)">Read More</button>
+            </div>
+        </div>
+    </div>
+   
+    <script>
+        function toggleContent(button) {
+            const cardContent = button.parentElement;
+            const hiddenContent = cardContent.querySelector('.hidden-content');
+            
+            if (hiddenContent.style.display === 'none') {
+                hiddenContent.style.display = 'block';
+                button.textContent = 'Read Less';
+            } else {
+                hiddenContent.style.display = 'none';
+                button.textContent = 'Read More';
+            }
+        }
+    </script>
+</body>
+</html>
+   
+</body>
+</html>
